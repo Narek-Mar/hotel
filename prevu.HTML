@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rooms|DDD HOTEL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <style>
+    body{
+    background-color: silver
+  }
+    .menu
+        {
+        font-size: 20px;
+        width: 100%;
+        height: 155px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        }
+        .menu1{
+          display: flex;padding-right: 30px;
+          padding-left: 40px;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+         width: 150px;
+        }
+        .datark{
+          width: 100%;
+        }
+        .home{
+          color: white;padding-bottom:  30px;
+          transition: .5s ease-in-out;
+          animation-name: home;
+          animation-duration:5s;
+          opacity: 0;
+          }
+          @keyframes home{
+            0%{padding-bottom:  80px;margin-left: 300px;opacity:0;color: black; }
+            10%{padding-bottom:  80px;margin-left: 300px;opacity:1;color: black;  }
+            85%{padding-bottom:  0px;padding-left: 0px;opacity:1; color: black; }
+            95%{padding-bottom:  0px;padding-left: 0px;opacity:.5; color: black; }
+            100%{padding-bottom:  0px;padding-left: 0px;opacity:0;color: black; }
+          }
+          .home:hover{opacity: 1;padding-bottom:  0;
+            outline:3px solid black;
+            outline-offset: 15px;
+            color: black;
+          }
+        .menu2{
+          opacity: 0;
+          padding-left:  10px;
+          margin: 0;
+          color: white;
+          transition: .5s ease-in-out;
+          animation-name: menu;
+          animation-duration:4s;
+          }
+          @keyframes menu{
+            0%{padding-bottom:  60px;margin-right: 300px;opacity:0;color: black; }
+            10%{padding-bottom:  60px;margin-right: 300px;opacity:1;color: black;  }
+            90%{padding-left:  0px;padding-bottom:  0px;padding-right: 0px;opacity:.9; color: black; }
+            100%{padding-left:  10px;padding-bottom:  0px;padding-right: 0px;opacity:0;color: black; }
+          }
+          .menu2:hover{
+            opacity: 1;padding-left:  0;
+            outline:3px solid black;
+            outline-offset:25px;
+            color:black;
+          }
+        .reserv{
+            padding-top: 35px;
+            opacity: .7;
+            width: 150px;
+            height: 110px;
+            color:white;
+            background: #1e3b1f;
+            animation-name: example;
+            animation-duration: 4s;
+            transition: .5s ease-in-out}
+          .reserv:hover{
+            padding-top: 0px;
+            opacity: 1;
+            background: #362917;
+            border-radius: 50%;
+            width: 150px;height: 150px;
+            color: yellow;
+            }
+            @keyframes example {
+              0% {background-color: #1e3b1f;opacity:0;color:yellow; }
+              40% {background-color: #362917;opacity:.8;color:green; }
+              70% {background-color: #1e3b1f; opacity: .9;color:black;}
+              100% {background-color: #1e3b1f;opacity:.7;color:white; }
+            }
+    .body{
+
+      flex-direction: column;
+      height: 100%;
+      }
+      .foto{
+
+        display: flex;
+        justify-content: center;
+        height: 700px;
+        }
+        .l{box-shadow: 5px 5px 5px;
+          width: 370px; background-size: cover;
+          animation-name: l;
+          animation-duration: 14s;
+          animation-iteration-count: infinite;
+          background-image: url('https://sun9-37.userapi.com/impf/tb2NaQ-LP4CYJGm-vMoDZRVCnvEfwWlyxNmAPA/FDZhbWco6a8.jpg?size=377x957&quality=96&proxy=1&sign=cad9f3298a91a22be8e58651bb459783&type=album');
+        }
+        @keyframes l{
+          0% {margin-bottom:0px; margin-top:10px;margin-right: 0;opacity:0; background-image: url('https://sun9-37.userapi.com/impf/tb2NaQ-LP4CYJGm-vMoDZRVCnvEfwWlyxNmAPA/FDZhbWco6a8.jpg?size=377x957&quality=96&proxy=1&sign=cad9f3298a91a22be8e58651bb459783&type=album'); }
+          20% {-webkit-filter: contrast(200%);margin-bottom:30px;margin-top:50px;opacity:1;background-image: url('https://sun9-37.userapi.com/impf/tb2NaQ-LP4CYJGm-vMoDZRVCnvEfwWlyxNmAPA/FDZhbWco6a8.jpg?size=377x957&quality=96&proxy=1&sign=cad9f3298a91a22be8e58651bb459783&type=album'); }
+          38% {margin-bottom: 0px;margin-top:50px;margin-right: 20px;opacity:0;background-image: url('https://sun9-37.userapi.com/impf/tb2NaQ-LP4CYJGm-vMoDZRVCnvEfwWlyxNmAPA/FDZhbWco6a8.jpg?size=377x957&quality=96&proxy=1&sign=cad9f3298a91a22be8e58651bb459783&type=album'); }
+          41% {margin-top: 20px;margin-bottom: 50px;margin-right:50px;opacity:0;background-image: url('https://sun9-34.userapi.com/impf/C2zvTMWhHUEqT-yUlQ1QxPhJ_pMVvkbg1Ihdfg/OTCNx8LTy6k.jpg?size=636x1080&quality=96&sign=5936da01915487db5d1a8e6085be5c4f&type=album'); }
+          65% {-webkit-filter: contrast(200%);margin-top:0px;opacity:1;background-image: url('https://sun9-34.userapi.com/impf/C2zvTMWhHUEqT-yUlQ1QxPhJ_pMVvkbg1Ihdfg/OTCNx8LTy6k.jpg?size=636x1080&quality=96&sign=5936da01915487db5d1a8e6085be5c4f&type=album'); }
+          100% {margin-top:0px;opacity:0;background-image: url('https://sun9-34.userapi.com/impf/C2zvTMWhHUEqT-yUlQ1QxPhJ_pMVvkbg1Ihdfg/OTCNx8LTy6k.jpg?size=636x1080&quality=96&sign=5936da01915487db5d1a8e6085be5c4f&type=album'); }
+
+        }
+        .c{box-shadow: 5px 5px 5px;margin-left: 15px;margin-right: 10px;
+          width: 380px;
+         background-size: cover;
+          animation-name: c;
+          animation-duration: 14s;
+          animation-iteration-count: infinite;
+          background-image: url("https://sun9-46.userapi.com/impf/jiKOzFhd62dbwuXotviawv_JzIbuArciS45e4g/cjWzKwEmIcE.jpg?size=454x958&quality=96&proxy=1&sign=610e6f7061592e4ef556692725336898&type=album");
+        }
+        @keyframes c{
+          0% {-webkit-filter: contrast(90%);margin-bottom:10px; margin-top:0px;opacity:0;background-image: url("https://sun9-46.userapi.com/impf/jiKOzFhd62dbwuXotviawv_JzIbuArciS45e4g/cjWzKwEmIcE.jpg?size=454x958&quality=96&proxy=1&sign=610e6f7061592e4ef556692725336898&type=album"); }
+          25% {-webkit-filter: contrast(200%);margin-bottom:50px;margin-top:30px;opacity:1;background-image: url("https://sun9-46.userapi.com/impf/jiKOzFhd62dbwuXotviawv_JzIbuArciS45e4g/cjWzKwEmIcE.jpg?size=454x958&quality=96&proxy=1&sign=610e6f7061592e4ef556692725336898&type=album");}
+          38% {margin-bottom:50px;margin-top:30px;opacity:0;background-image: url("https://sun9-46.userapi.com/impf/jiKOzFhd62dbwuXotviawv_JzIbuArciS45e4g/cjWzKwEmIcE.jpg?size=454x958&quality=96&proxy=1&sign=610e6f7061592e4ef556692725336898&type=album");}
+          41% {-webkit-filter: contrast(100%);margin-bottom:50px;margin-top:30px;opacity:0; background-image: url("https://sun9-2.userapi.com/impf/Pw9MtlOXgLjjtg7Dskxzmi0A-Yj0SCWQBfKTaQ/8zF-q94eimE.jpg?size=662x1080&quality=96&sign=b0f1a5e2419073e24cdfe7ebd074c2ee&type=album");}
+          70% {-webkit-filter: contrast(200%);margin-bottom:0px;margin-top:0px;opacity:1; background-image: url("https://sun9-2.userapi.com/impf/Pw9MtlOXgLjjtg7Dskxzmi0A-Yj0SCWQBfKTaQ/8zF-q94eimE.jpg?size=662x1080&quality=96&sign=b0f1a5e2419073e24cdfe7ebd074c2ee&type=album");}
+          100% {opacity:0;background-image: url("https://sun9-2.userapi.com/impf/Pw9MtlOXgLjjtg7Dskxzmi0A-Yj0SCWQBfKTaQ/8zF-q94eimE.jpg?size=662x1080&quality=96&sign=b0f1a5e2419073e24cdfe7ebd074c2ee&type=album"); }
+
+        }
+        .r{box-shadow: 5px 5px 5px;
+          width: 370px; background-size: cover;
+          animation-name: r;
+          animation-duration: 14s;
+          animation-iteration-count: infinite;
+          background-image: url('https://sun9-50.userapi.com/impf/H6njofyFZ3MpSnaA_Lh0Y7ujlLwHWEjWV9Arcw/-W0If5mZRM8.jpg?size=448x958&quality=96&proxy=1&sign=b917a226883c72fa9d4b0a212cd4dc42&type=album');
+        }
+        @keyframes r{
+          0% {opacity:0;background-image: url("https://sun9-50.userapi.com/impf/H6njofyFZ3MpSnaA_Lh0Y7ujlLwHWEjWV9Arcw/-W0If5mZRM8.jpg?size=448x958&quality=96&proxy=1&sign=b917a226883c72fa9d4b0a212cd4dc42&type=album");}
+          20% {-webkit-filter: contrast(200%);opacity:1;background-image: url("https://sun9-50.userapi.com/impf/H6njofyFZ3MpSnaA_Lh0Y7ujlLwHWEjWV9Arcw/-W0If5mZRM8.jpg?size=448x958&quality=96&proxy=1&sign=b917a226883c72fa9d4b0a212cd4dc42&type=album");}
+          38% {opacity:0;background-image: url("https://sun9-50.userapi.com/impf/H6njofyFZ3MpSnaA_Lh0Y7ujlLwHWEjWV9Arcw/-W0If5mZRM8.jpg?size=448x958&quality=96&proxy=1&sign=b917a226883c72fa9d4b0a212cd4dc42&type=album");}
+          41% {opacity:0;margin-top: 50px;margin-bottom: 20px;margin-left: 50px;background-image: url("https://sun9-16.userapi.com/impf/ZrTbfvYYjWLypvGP7PF0IVO-keV5pqDdkL-h4Q/cMpr0ySQuLk.jpg?size=641x1080&quality=96&sign=1ba9d8acc17276d2206f378a52209e4f&type=album");}
+          60% {-webkit-filter: contrast(150%);opacity:1; margin-left: 0px;background-image: url("https://sun9-16.userapi.com/impf/ZrTbfvYYjWLypvGP7PF0IVO-keV5pqDdkL-h4Q/cMpr0ySQuLk.jpg?size=641x1080&quality=96&sign=1ba9d8acc17276d2206f378a52209e4f&type=album");}
+          100% {opacity:0;background-image: url("https://sun9-16.userapi.com/impf/ZrTbfvYYjWLypvGP7PF0IVO-keV5pqDdkL-h4Q/cMpr0ySQuLk.jpg?size=641x1080&quality=96&sign=1ba9d8acc17276d2206f378a52209e4f&type=album");}
+        }
+        .concept{
+
+          position: absolute;
+          font-size: 110px;
+          margin-top:400px;
+          animation-name: concept;
+          animation-duration: 5s;
+           animation-iteration-count: infinite;
+        }
+        @keyframes concept{
+
+          0% {opacity:0;color:white;font-size: 100px; }
+          50% {opacity:1;color:white; font-size: 140px;}
+          70% { opacity: 1;color:black;font-size: 140px;}
+          100% {opacity:0;color:white; font-size: 120px;}
+        }
+      .ej2{
+        font-family: "Sofia", sans-serif;
+        text-shadow: 3px 3px 3px #ababab;
+        margin-left: -10px;margin-right: -10px;
+        margin-top: 50px;
+        display:flex;
+        flex-wrap: nowrap;
+        min-height: 700px;   flex-basis: 50%;
+        }
+        .dz{
+          width: 50%;
+          padding-right: 10px;margin-right: 10px;
+          margin-bottom: 30px;
+          display:flex;
+          box-shadow: 5px 5px 5px;
+          border-radius: 5%;
+          flex-direction:column;
+          height: 90%;
+          font-size: 75px;
+          background-size: cover;
+          align-items: flex-end;
+          animation-name: dz;
+          animation-duration: 9s;
+          animation-iteration-count: infinite;
+          }
+          @keyframes dz{
+          0%{opacity: 0;color: white;background-image: url('https://sun9-63.userapi.com/impf/fAhNza9lQLdBz93mLFO7Gt_tvtRm-kD7DUmiTg/W4PqQUiRhnQ.jpg?size=1280x817&quality=96&sign=1958a648ac16875e992f717d0858bf75&type=album');}
+          15%{margin-left: 70px;margin-top: 60px;-webkit-filter: contrast(150%);opacity: 1;color: white;background-image: url('https://sun9-63.userapi.com/impf/fAhNza9lQLdBz93mLFO7Gt_tvtRm-kD7DUmiTg/W4PqQUiRhnQ.jpg?size=1280x817&quality=96&sign=1958a648ac16875e992f717d0858bf75&type=album');}
+          50%{margin-left: 70px;margin-top: 60px;-webkit-filter: contrast(150%);opacity: 1;color: white;background-image: url('https://sun9-63.userapi.com/impf/fAhNza9lQLdBz93mLFO7Gt_tvtRm-kD7DUmiTg/W4PqQUiRhnQ.jpg?size=1280x817&quality=96&sign=1958a648ac16875e992f717d0858bf75&type=album');}
+          54% { margin-top: 80px;opacity: 0;color: white;background-image: url('https://sun9-63.userapi.com/impf/fAhNza9lQLdBz93mLFO7Gt_tvtRm-kD7DUmiTg/W4PqQUiRhnQ.jpg?size=1280x817&quality=96&sign=1958a648ac16875e992f717d0858bf75&type=album');}
+          55%{margin-top: 70px;opacity: 0;color: black;background-image: url('https://sun9-9.userapi.com/impf/JMJuhZq8bphbFIQG6_SDO7kLPkmjKjEtbQ-eAQ/_plSKNQWQdg.jpg?size=865x1080&quality=96&sign=265853d85c39bf03c2fe43784aebb93e&type=album');}
+          65%{margin-top: 70px;-webkit-filter: contrast(150%);opacity: 1;color: black;background-image: url('https://sun9-9.userapi.com/impf/JMJuhZq8bphbFIQG6_SDO7kLPkmjKjEtbQ-eAQ/_plSKNQWQdg.jpg?size=865x1080&quality=96&sign=265853d85c39bf03c2fe43784aebb93e&type=album');}
+          95%{margin-top: 0px;-webkit-filter: contrast(150%);opacity: 1;color: black;background-image: url('https://sun9-9.userapi.com/impf/JMJuhZq8bphbFIQG6_SDO7kLPkmjKjEtbQ-eAQ/_plSKNQWQdg.jpg?size=865x1080&quality=96&sign=265853d85c39bf03c2fe43784aebb93e&type=album');}
+          100%{opacity: 0;color: white;background-image: url('https://sun9-9.userapi.com/impf/JMJuhZq8bphbFIQG6_SDO7kLPkmjKjEtbQ-eAQ/_plSKNQWQdg.jpg?size=865x1080&quality=96&sign=265853d85c39bf03c2fe43784aebb93e&type=album');}
+        }
+        .aj{
+          width: 50%;margin-left: 10px;
+          padding-left: 10px;
+          background-color: yellow;
+          display:flex;
+          flex-direction:column;
+
+          justify-content: flex-start;
+          height: 90%;
+          box-shadow: 5px 5px 5px;
+          border-radius: 5%;
+          background-size: cover;
+          font-size: 75px;
+          animation-name: aj;
+          animation-duration: 9s;
+          animation-iteration-count: infinite;
+          }
+          @keyframes aj{
+          0%{opacity: 0;color: black;background-image: url('https://sun9-76.userapi.com/impf/9IMq4oxZVLqZ3fcMrAtEtS0xwrn68xk-EFPkfw/LLSVg5Xl0Tw.jpg?size=512x384&quality=96&sign=e36a26e9427685f397e0105fde9dafc5&type=album');}
+          15%{margin-top: 70px; -webkit-filter: contrast(150%);opacity: 1;color: black;background-image: url('https://sun9-76.userapi.com/impf/9IMq4oxZVLqZ3fcMrAtEtS0xwrn68xk-EFPkfw/LLSVg5Xl0Tw.jpg?size=512x384&quality=96&sign=e36a26e9427685f397e0105fde9dafc5&type=album');}
+          50%{margin-top: 70px; -webkit-filter: contrast(150%);opacity: 1;color: black;background-image: url('https://sun9-76.userapi.com/impf/9IMq4oxZVLqZ3fcMrAtEtS0xwrn68xk-EFPkfw/LLSVg5Xl0Tw.jpg?size=512x384&quality=96&sign=e36a26e9427685f397e0105fde9dafc5&type=album');}
+          54%{margin-top: 90px;opacity: 0;color: black;background-image: url('https://sun9-76.userapi.com/impf/9IMq4oxZVLqZ3fcMrAtEtS0xwrn68xk-EFPkfw/LLSVg5Xl0Tw.jpg?size=512x384&quality=96&sign=e36a26e9427685f397e0105fde9dafc5&type=album');}
+          55%{margin-right: 70px;margin-top: 80px;opacity: 0;color: black;background-image: url('https://sun9-3.userapi.com/impf/-YOQctsXX29-3Yb4e797xsvR7UON0X5MUmxYFg/Vu--WD3-gCI.jpg?size=1280x800&quality=96&sign=00a83bebab55b01ca41a2777ad492c40&type=album');}
+          65%{margin-right: 70px;margin-top: 80px;-webkit-filter: contrast(150%);opacity: 1;color: white;background-image: url('https://sun9-3.userapi.com/impf/-YOQctsXX29-3Yb4e797xsvR7UON0X5MUmxYFg/Vu--WD3-gCI.jpg?size=1280x800&quality=96&sign=00a83bebab55b01ca41a2777ad492c40&type=album');}
+          95%{margin-right: 0px;margin-top: 0px;-webkit-filter: contrast(150%);opacity: 1;color: white;background-image: url('https://sun9-3.userapi.com/impf/-YOQctsXX29-3Yb4e797xsvR7UON0X5MUmxYFg/Vu--WD3-gCI.jpg?size=1280x800&quality=96&sign=00a83bebab55b01ca41a2777ad492c40&type=album');}
+          100%{opacity: 0;color: black;background-image: url('https://sun9-3.userapi.com/impf/-YOQctsXX29-3Yb4e797xsvR7UON0X5MUmxYFg/Vu--WD3-gCI.jpg?size=1280x800&quality=96&sign=00a83bebab55b01ca41a2777ad492c40&type=album');}
+        }
+      .ej3{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+        .rooms{
+          margin-top: 50px;
+          width:500px;
+          background-color: white;
+          min-height: 500px;
+          padding: 8px;
+          transition: .3s ease-in-out
+
+        }
+        .rooms:hover{
+            box-shadow: 3px 3px 3px 3px;
+          }
+        #a1{background-size: cover;animation-iteration-count: infinite;
+         width: 100%;  height: 50%;
+          animation-name: a1;  animation-duration:8s;border-radius: 12px;}
+          @keyframes a1{
+              0%{opacity:0;background-image: url("https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337880.jpg");}
+              10%{opacity:1; background-image: url("https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337880.jpg"); }
+              40%{opacity:1; background-image: url('https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337880.jpg'); }
+              49%{opacity:0; background-image: url('https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337880.jpg'); }
+              50%{opacity:0;background-image: url('https://calistosozopol.com/wp-content/uploads/2019/03/Calisto_hotel_room4.jpg');  }
+              60%{opacity:1; background-image: url('https://calistosozopol.com/wp-content/uploads/2019/03/Calisto_hotel_room4.jpg'); }
+              90%{opacity:1; background-image: url('https://calistosozopol.com/wp-content/uploads/2019/03/Calisto_hotel_room4.jpg');}
+              100%{opacity:0; background-image: url('https://calistosozopol.com/wp-content/uploads/2019/03/Calisto_hotel_room4.jpg');}
+            }
+        #a2{  animation-delay:3s;
+          background-size: cover;animation-iteration-count: infinite;
+         width: 100%;  height: 50%; animation-name: a2;
+         animation-duration:8s;border-radius: 12px;}
+            @keyframes a2{
+                  0%{opacity:0;background-image: url('https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337877.jpg');}
+                  10%{opacity:1; background-image: url('https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337877.jpg'); }
+                  40%{opacity:1; background-image: url('https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337877.jpg'); }
+                  49%{opacity:0; background-image: url('https://static.readytotrip.com/upload/information_system_24/1/5/7/item_1575357/photo_29337877.jpg'); }
+                  50%{opacity:0;background-image: url('https://www.skalahotel.gr/wp-content/uploads/2021/01/Skala-Hotel-Patmos-Accommodation-Double-Sea-View-and-Bathroom-6.jpg');  }
+                  60%{opacity:1; background-image: url('https://www.skalahotel.gr/wp-content/uploads/2021/01/Skala-Hotel-Patmos-Accommodation-Double-Sea-View-and-Bathroom-6.jpg'); }
+                  90%{opacity:1; background-image: url('https://www.skalahotel.gr/wp-content/uploads/2021/01/Skala-Hotel-Patmos-Accommodation-Double-Sea-View-and-Bathroom-6.jpg');}
+                  100%{opacity:0; background-image: url('https://www.skalahotel.gr/wp-content/uploads/2021/01/Skala-Hotel-Patmos-Accommodation-Double-Sea-View-and-Bathroom-6.jpg');}
+                }
+        #a3{animation-delay:2s;
+          background-size: cover;animation-iteration-count: infinite;
+         width: 100%;  height: 50%; animation-name: a3;
+         animation-duration:8s;border-radius: 12px;}
+         @keyframes a3{
+               0%{opacity:0;background-image: url('https://cdn.101hotels.com/uploads/image/hotel/4159/141543_mobile.jpg');}
+               10%{opacity:1; background-image: url('https://cdn.101hotels.com/uploads/image/hotel/4159/141543_mobile.jpg'); }
+               40%{opacity:1; background-image: url('https://cdn.101hotels.com/uploads/image/hotel/4159/141543_mobile.jpg'); }
+               49%{opacity:0; background-image: url('https://cdn.101hotels.com/uploads/image/hotel/4159/141543_mobile.jpg'); }
+               50%{opacity:0;background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg');  }
+               60%{opacity:1; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg'); }
+               90%{opacity:1; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg');}
+               100%{opacity:0; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg');}
+             }
+        #a4{animation-delay:3s;
+          background-size: cover;animation-iteration-count: infinite;
+         width: 100%;  height: 50%; animation-name: a4;
+         animation-duration:8s;border-radius: 12px;}
+         @keyframes a4{
+               0%{opacity:0;background-image: url('https://hmd.tvil.ru/tmp/20190530/e11/2215569.jpeg');}
+               10%{opacity:1; background-image: url('https://hmd.tvil.ru/tmp/20190530/e11/2215569.jpeg'); }
+               40%{opacity:1; background-image: url('https://hmd.tvil.ru/tmp/20190530/e11/2215569.jpeg'); }
+               49%{opacity:0; background-image: url('https://hmd.tvil.ru/tmp/20190530/e11/2215569.jpeg'); }
+               50%{opacity:0;background-image: url('https://img.emalon.co.il/hotels-pictures/dead-sea/spa-lot-hotel-studio-room-600x398-1.jpg');  }
+               60%{opacity:1; background-image: url('https://img.emalon.co.il/hotels-pictures/dead-sea/spa-lot-hotel-studio-room-600x398-1.jpg'); }
+               90%{opacity:1; background-image: url('https://img.emalon.co.il/hotels-pictures/dead-sea/spa-lot-hotel-studio-room-600x398-1.jpg');}
+               100%{opacity:0; background-image: url('https://img.emalon.co.il/hotels-pictures/dead-sea/spa-lot-hotel-studio-room-600x398-1.jpg');}
+             }
+        #a5{animation-delay:1s;
+          background-size: cover;animation-iteration-count: infinite;
+         width: 100%;  height: 50%; animation-name: a5;
+         animation-duration:8s;border-radius: 12px;}
+         @keyframes a5{
+               0%{opacity:0;background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/42/f6/lrge-deluxe-room-front.jpg');}
+               10%{opacity:1; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/42/f6/lrge-deluxe-room-front.jpg'); }
+               40%{opacity:1; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/42/f6/lrge-deluxe-room-front.jpg'); }
+               49%{opacity:0; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/42/f6/lrge-deluxe-room-front.jpg'); }
+               50%{opacity:0;background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg');  }
+               60%{opacity:1; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg'); }
+               90%{opacity:1; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg');}
+               100%{opacity:0; background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/55/3d/d5/deluxe-room-front-sea.jpg');}
+             }
+        #a6{animation-delay:2s;
+          background-size: cover;animation-iteration-count: infinite;
+         width: 100%;  height: 50%; animation-name: a6;
+         animation-duration:8s;border-radius: 12px;}
+         @keyframes a6{
+               0%{opacity:0;background-image: url('https://www.jpmoser.com/jpmoser_guide/images/stories/hotelrivierasorrento6.jpg');}
+               10%{opacity:1; background-image: url('https://www.jpmoser.com/jpmoser_guide/images/stories/hotelrivierasorrento6.jpg'); }
+               40%{opacity:1; background-image: url('https://www.jpmoser.com/jpmoser_guide/images/stories/hotelrivierasorrento6.jpg'); }
+               49%{opacity:0; background-image: url('https://www.jpmoser.com/jpmoser_guide/images/stories/hotelrivierasorrento6.jpg'); }
+               50%{opacity:0;background-image: url('https://www.jpmoser.com/jpmoser_guide/images/stories/hotelrivierasorrento6.jpg');  }
+               60%{opacity:1; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4G3_ebELm_TS9IywEPgVnp3AVXZ_yFjzVw&usqp=CAU'); }
+               90%{opacity:1; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4G3_ebELm_TS9IywEPgVnp3AVXZ_yFjzVw&usqp=CAU');}
+               100%{opacity:0; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4G3_ebELm_TS9IywEPgVnp3AVXZ_yFjzVw&usqp=CAU');}
+             }
+        .rooms1{
+          padding-top: 5px;
+          text-align: center;
+          font-size: 25px;
+          background-color: silver;
+          width: 100%;
+          height: 7%;
+          border-radius: 5px 5px 5px 5px;
+            }
+          .rooms2{
+            padding: 4px;
+            font-size: 20px;
+            background-color: silver;
+            width: 99%;
+            height: 18%;
+            }
+          .rooms3{
+            margin-left: 45%;
+            display: flex;
+            align-content: flex-end;
+            flex-wrap: nowrap;
+            width: 100%;
+
+            }
+            .pa{
+              margin-left: 5px;
+              width: 30%;
+              text-align: center;
+              align-self: stretch;
+              border-radius: 12px;
+              color:white;
+                background-color: #555555;
+            }
+            .pa:hover {
+              color: #555555;
+              background-color: white;
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+              0 17px 50px 0 rgba(0,0,0,0.19);
+
+            }
+      .footer{
+        padding: 20px 20px 20px 20px;
+        height: 200PX;
+        width: 100%;
+        background-color: #3b4834;
+        display: flex;
+        margin-top:40px;
+        align-content: space-between;
+        color: white;
+
+      }
+      .footer1{font-size: 30px;
+        margin-left:  100px;
+        margin-top: 60px;
+      }
+      #m1{}
+      @media  (max-device-width: 1100px){}
+    </style>
+
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu1"> .<div class="home">Home</div> </div>
+      <div class="datark"></div>
+      <div class="menu1"> M<div class="menu2">  enu </div></div>
+      <div class="menu1"><div class="reserv" align="center"> <br> <br> Reservation</div></div>
+    </div>
+    <div class="body">
+        <div class="foto">
+          <div class="l"></div>
+          <div class="c"></div>
+          <div class="r"></div>
+          <h1 class="concept">Blue Paradise</h1>
+
+
+        </div>
+        <div class="ej2">
+          <div class="dz">
+            <p >A sea</p>
+            <p>an ocean</p>
+
+            <p>await</p>
+          </div>
+          <div class="aj">
+            <p>of colors</p>
+            <p>of tranquility</p>
+            <p>you.</p>
+          </div>
+        </div>
+        <div class="ej3">
+          <div class="rooms" >
+            <p id="a1"></p>
+            <h1 class="rooms1">ROOM</h1>
+            <p class="rooms2" >Deteils</p>
+            <div class="rooms3"><p>Price xxx$/day</p> <p class="pa">Reservation</p> </div>
+          </div>
+          <div class="rooms">
+            <p id="a2"></p>
+            <h1 class="rooms1">ROOM</h1>
+            <p class="rooms2" >Deteils</p>
+            <div class="rooms3"><p>Price $/day</p> <p class="pa">Reservation</p> </div>
+            </div>
+          <div class="rooms">
+            <p id="a3"></p>
+            <h1 class="rooms1">ROOM</h1>
+            <p class="rooms2" >Deteils</p>
+            <div class="rooms3"><p>Price $/day</p> <p class="pa">Reservation</p> </div>
+            </div>
+          <div class="rooms">
+             <p id="a4"></p>
+            <h1 class="rooms1">ROOM</h1>
+            <p class="rooms2" >Deteils</p>
+            <div class="rooms3"><p>Price $/day</p> <p class="pa">Reservation</p> </div>
+          </div>
+          <div class="rooms">
+            <p id="a5"></p>
+            <h1 class="rooms1">ROOM</h1>
+            <p class="rooms2" >Deteils</p>
+            <div class="rooms3"><p>Price $/day</p> <p class="pa">Reservation</p> </div>
+            </div>
+          <div class="rooms">
+            <p id="a6"></p>
+            <h1 class="rooms1">ROOM</h1>
+            <p class="rooms2" >Deteils</p>
+            <div class="rooms3"><p>Price $/day</p> <p class="pa">Reservation</p> </div>
+            </div>
+
+        </div>
+        <div class="footer">
+          <div class="footer1" >  2021 DDD HOTEL  </div>
+          <div class="footer1" >  instagram  </div>
+          <div class="footer1" >  Tel:+8 0 0000 0000  </div>
+          <div class="footer1" >  Email: info@mail.ru  </div>
+          <div class="footer1" id="m1" >  Map  </div>
+
+        </div>
+  </body>
+</html>
